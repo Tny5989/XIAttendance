@@ -32,7 +32,7 @@ local function ParseSearch()
     end
 
     local players = {}
-    for i = start_index, truncated_count do
+    for i = start_index, truncated_count - 1 + start_index do
         table.insert(players, memory.GetPlayer(results_base, i))
     end
 
